@@ -1,0 +1,313 @@
+body {
+  padding-top: 70px; /* Adjust this value based on the actual height of your header */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F7FEFF;
+}
+
+.site-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff; /* Or the color of your header */
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container .logo {
+  height: 50px; /* Adjust logo size as needed */
+}
+
+.navigation .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adjust gap between navigation items as needed */
+  margin: 0;
+  padding: 0;
+}
+
+.navigation .nav-item a {
+  text-decoration: none;
+  color: #333; /* Adjust text color as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.header-action .btn-get-loan {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007bff; /* Adjust button background color as needed */
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* Adjust border-radius for rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Gap between text and the icon */
+}
+
+.header-action .btn-get-loan:hover {
+  background-color: #0056b3; /* Adjust hover state background color as needed */
+}
+
+.hero {
+  margin-top: 20px; /* Add margin to the top of hero to account for the fixed header */
+  padding: 2rem; /* Adjust this as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7FEFF;
+
+}
+
+.hero-content {
+  max-width: 600px; /* Adjust width as needed */
+}
+
+.hero h1 {
+  font-size: 2rem; /* Adjust font size as needed */
+  color: #007bff; /* Adjust font color as needed */
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem; /* Adjust font size as needed */
+  margin-bottom: 2rem;
+}
+
+.btn-apply-now {
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust button background color as needed */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px; /* Adjust for rounded corners */
+  display: inline-block;
+}
+
+.licenses {
+  display: flex;
+  margin-top: 200px;
+  gap: 1rem; /* Adjust spacing between logos as needed */
+}
+
+.license-logo {
+  height: 40px; /* Adjust logo size as needed */
+}
+
+.hero-image .responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+.why-loanme {
+  text-align: center;
+  background-color: #ffffff; /* Adjust the background color as needed */
+  padding: 2rem; /* Adjust padding as needed */
+}
+
+.why-loanme h2 {
+  color: #0064AF; /* Adjust the color as needed */
+  margin-bottom: 4rem;
+}
+
+.benefit-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem; /* This creates space between the cards */
+}
+
+.benefit-card {
+  background-color: #fff; /* Adjust the background color as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjust the shadow as needed */
+  width: calc(33.333% - 1rem); /* Three cards per row with gap */
+  margin-bottom: 1rem; /* Space below each card */
+  padding: 1rem; /* Adjust padding inside the cards as needed */
+}
+
+.benefit-card h3 {
+ /* Adjust the title color as needed */
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  color: #666; /* Adjust the text color as needed */
+  font-size: 0.875rem; /* Adjust the font size as needed */
+}
+.testimonials {
+  background-color: #f8f8f8; /* Adjust the background color as needed */
+  padding: 4rem 2rem; /* Add padding to space out the content */
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #0064AF; /* Adjust the color as needed */
+  margin-bottom: 0.5rem;
+}
+
+.testimonials .subtitle {
+  color: #555; /* Adjust the color as needed */
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.testimonial-wrapper {
+  position: relative; /* For positioning the carousel controls */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height as needed */
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #555; /* Adjust the color as needed */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: whitesmoke;
+  border: none;
+  border-color: #cacaca;
+  border-radius: 30px 30px;
+  cursor: pointer;
+}
+
+.carousel-control.left {
+  left: 1rem;
+}
+
+.carousel-control.right {
+  right: 1rem;
+}
+.faq-section {
+  background-color: #ffffff; /* As seen in the image */
+  color: #0064AF; /* Text color for better readability */
+  padding: 2rem; /* Spacing around the content */
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.faq-container {
+  max-width: 800px; /* Adjust the width as per your design */
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: transparent; /* Darker background for each item */
+  border: 1px solid #007FB6; /* Slight border for definition */
+  color: black;
+  border-radius: 5px; /* Rounded corners as per your design */
+  margin-bottom: 1rem; /* Space between each FAQ item */
+  overflow: hidden; /* Keeps the border-radius intact */
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: #000; /* Text color */
+  width: 100%;
+  padding: 1rem; /* Padding within the question button */
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none; /* Hide answers by default */
+  padding: 1rem; /* Padding within the answer container */
+}
+
+.faq-answer p {
+  margin: 0; /* No additional space around the paragraph */
+}
+
+/* Optional: Add a bit of interactivity with hover effect */
+.faq-question:hover {
+  background-color: #333; /* Slightly darker on hover */
+  color: white;
+}
+.site-footer {
+  background-color: #000; /* Black background */
+  color: white;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 150px; /* Adjust according to your logo */
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.link-category h4 {
+  margin-bottom: 0.5rem;
+  color: #7D7D7D;
+}
+
+.link-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-category ul li a {
+  text-decoration: none;
+  color: #7D7D7D;
+  margin-bottom: 0.25rem; /* Space between links */
+  display: block;
+  font-weight: 400;
+  font-size: medium;
+}
+.link-category ul li {
+  font-weight: 400;
+  font-size: medium;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  margin: 0 10px; /* Spacing between icons */
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem; /* Size of the text icons */
+}
+
+.footer-bottom{
+  color: #7D7D7D;
+  display: flex;
+  justify-content: space-between;
+}
+
+
