@@ -1,0 +1,92 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+form h2{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  color: #007bff;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.logo-section {
+  background-color: #F7FEFF;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group input, button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* This line ensures padding and border are included within the width */
+}
+
+button {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ... rest of your CSS ... */
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.sign-in-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sign-in-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sign-in-link a:hover {
+  text-decoration: underline;
+}
