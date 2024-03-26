@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="sign-in.css" />
+
+    <style>
+      @font-face {
+        font-family: "Satoshi";
+        src: url("./public/Satoshi-Regular.otf");
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Satoshi";
+        src: url("./public/Satoshi-Bold.otf");
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Satoshi";
+        src: url("./public/Satoshi-Black.otf");
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sign-in">
+      <div class="random-symboles-4-parent">
+        <img
+          class="random-symboles-4"
+          loading="lazy"
+          alt=""
+          src="./public/random-symboles-4@2x.png"
+        />
+
+        <div class="loanme-wrapper">
+          <b class="loanme">LoanMe</b>
+        </div>
+      </div>
+      <div class="sign-in-inner">
+        <div class="frame-parent">
+          <div class="sign-in-wrapper">
+            <h3 class="sign-in1">Sign in</h3>
+          </div>
+          <form class="no-account-message">
+            <div class="account-inputs">
+              <div class="phone-number">Phone number</div>
+              <div class="divider">
+                <div class="div">+234</div>
+                <input class="input" placeholder="8123456789" type="text" />
+              </div>
+              <div class="password">Password</div>
+              <div class="divider1">
+                <!-- Change type from "text" to "password" -->
+                <input class="div1" placeholder="******************" type="password" />
+              </div>
+            </div>
+            <button class="signup-call">
+              <div class="sign-in2">Sign in</div>
+            </button>
+          </form>
+          <footer class="you-do-not-have-an-account-si-wrapper">
+            <div class="you-do-not-container">
+              <span>You do not have an account? </span>
+              <a href="signup.html" class="signup">Sign up</a> <!-- Link to sign-up page -->
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="signin.js"></script>
+  </body>
+</html>

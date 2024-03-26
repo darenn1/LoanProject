@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="signup.css" />
+
+    <style>
+      @font-face {
+        font-family: "Satoshi";
+        src: url("./public/Satoshi-Regular.otf");
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Satoshi";
+        src: url("./public/Satoshi-Medium.otf");
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "Satoshi";
+        src: url("./public/Satoshi-Bold.otf");
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "Satoshi";
+        src: url("./public/Satoshi-Black.otf");
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sign-up">
+      <div class="random-symboles-4-parent">
+        <img
+          class="random-symboles-4"
+          loading="lazy"
+          alt=""
+          src="./public/random-symboles-4@2x.png"
+        />
+
+        <div class="loanme-wrapper">
+          <b class="loanme">LoanMe</b>
+        </div>
+      </div>
+      <div class="sign-up-inner">
+        <div class="signup-input-parent">
+          <div class="signup-input">
+            <h3 class="sign-up1">Sign up</h3>
+          </div>
+          <form class="frame-parent">
+            <div class="phone-number-parent">
+              <div class="phone-number">Phone number</div>
+              <div class="separator">
+                <div class="empty-space">+234</div>
+                <input class="input" placeholder="8123456789" type="text" />
+              </div>
+              <div class="password">Password</div>
+              <div class="separator1">
+                <input class="div" placeholder="******************" type="password" />
+              </div>
+              <div class="confirm-password">Confirm password</div>
+              <div class="separator2">
+                <input class="div1" placeholder="******************" type="password" />
+              </div>
+            </div>
+            <button class="get-o-t-p-button">
+              <div class="get-otp">Get OTP</div>
+            </button>
+          </form>
+          <footer class="already-have-an-account-sign-wrapper">
+            <div class="already-have-an-container">
+              <span>Already have an account? </span>
+              <a href="signin.html" class="signin">Sign in</a> <!-- Link to sign-in page -->
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src = "signup.js"></script>
+  </body>
+</html>
