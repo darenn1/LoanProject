@@ -1,12 +1,14 @@
 function validateForm() {
     // Get the form elements
-    const name = document.getElementById('name');
+    const firstName = document.getElementById('first_name');
+    const lastName = document.getElementById('last_name');
     const phone = document.getElementById('phone');
     const password = document.getElementById('password');
     const confirmPassword = document.getElementById('confirm-password');
   
     // Clear any previous error messages
-    name.nextElementSibling.innerHTML = "";
+    firstName.nextElementSibling.innerHTML = "";
+    lastName.nextElementSibling.innerHTML = "";
     phone.nextElementSibling.innerHTML = "";
     password.nextElementSibling.innerHTML = "";
     confirmPassword.nextElementSibling.innerHTML = "";
@@ -14,9 +16,14 @@ function validateForm() {
     // Error messages (if any)
     let errorMessage = "";
   
-    // Validate name (at least one field must be filled)
-    if (name.value.trim() === "" && name.nextElementSibling.id === "name-error") {
-      errorMessage += "Please enter your first name or last name. <br>";
+    // Validate first name
+    if (firstName.value.trim() === "") {
+        errorMessage += "Please enter your first name. <br>";
+    }
+
+    // Validate last name
+    if (lastName.value.trim() === "") {
+        errorMessage += "Please enter your last name. <br>";
     }
   
     // Validate phone number
