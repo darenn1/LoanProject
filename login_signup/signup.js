@@ -77,8 +77,6 @@ function validateForm() {
     if (validateForm()) {
       window.location.assign("../customer/custEmpty.html");
       // Form is valid, process form data here (e.g., send to server for signup)
-      alert("OTP sent to your phone number!");
-      clearErrors();
     }
   });
   
