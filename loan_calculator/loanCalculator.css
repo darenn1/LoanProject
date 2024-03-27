@@ -46,6 +46,10 @@
 .header-action .btn-get-loan:hover {
   background-color: #0056b3; /* Button hover state color */
 }
+.btn-get-loan a{
+  text-decoration: none;
+  color: white;
+}
 
 /* Ensure the main content is not hidden behind the fixed header */
 
