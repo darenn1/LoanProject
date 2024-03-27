@@ -49,6 +49,10 @@ body {
   gap: 5px; /* Gap between text and the icon */
   margin-right: 70px;
 }
+.btn-get-loan a{
+  text-decoration: none;
+  color: white;
+}
 
 .header-action .btn-get-loan:hover {
   background-color: #0056b3; /* Adjust hover state background color as needed */

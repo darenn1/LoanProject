@@ -79,3 +79,6 @@ form h2 {
   padding-top: 20px;
   color: #007bff;
 }
+.error-message{
+  font-size: small;
+}
