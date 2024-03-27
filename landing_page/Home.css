@@ -49,7 +49,7 @@ body {
   gap: 5px; /* Gap between text and the icon */
   margin-right: 70px;
 }
-.btn-get-loan a{
+a{
   text-decoration: none;
   color: white;
 }

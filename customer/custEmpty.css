@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px; /* Set sidebar width */
+  background-color: #F7FEFF; /* Sidebar background color */
+  border-left: 1px solid #e0e0e0; /* Border on the left of sidebar */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow on the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between menu and logout */
+}
+
+.logo-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px; /* Adjust logo size */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  border-left: 3px solid transparent; /* For active state */
+}
+
+.menu-item.active {
+  border-left-color: #007bff; /* Active item indicator */
+}
+
+.menu-item:hover {
+  background-color: #f8f9fa;
+}
+
+.menu-item .icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.logout-section {
+  padding: 20px;
+  font-size: 0.9em;
+  border-top: 1px solid #e0e0e0; /* Border above logout */
+  text-align: center;
+}
+
+.logout-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.logout-link .icon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.content {
+  flex-grow: 1;
+  /* Style for main content */
+}
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: white; /* Or the appropriate color based on the design */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content h1 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.document-image {
+  width: 200px; /* Adjust to the actual size of your image */
+  height: auto; /* Maintain the aspect ratio of the image */
+  margin: 10px 0;
+}
+
+.btn-apply {
+  padding: 10px 70px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 11px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: small;
+}
+.btn-apply:hover {
+  background-color: #0056b3;
+}
+
+/* Replace icon paths with your actual images and adjust sizes as necessary */

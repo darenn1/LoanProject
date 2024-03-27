@@ -63,6 +63,7 @@ function validateForm() {
     event.preventDefault(); // Prevent default form submission
   
     if (validateForm()) {
+      window.location.assign("../customer/custEmpty.html");
       // Form is valid, process form data here (e.g., send to server for signup)
     }
   });

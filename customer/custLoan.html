@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+    <link rel="stylesheet" href="custLoan.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="logo.png" alt="LoanMe Logo" class="logo">
+        </div>
+        <div class="menu">
+            <a href="#" class="menu-item active">
+                <img src="money.png" alt="" class="icon">
+                Apply for loan
+            </a>
+            <a href="#" class="menu-item">
+                <img src="card.png" alt="" class="icon">
+                Repayment
+            </a>
+        </div>
+        <div class="logout-section">
+            <p>0812 345 6789</p>
+            <a href="#" class="logout-link">
+                <img src="logout.png" alt="" class="icon">
+                Log Out
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+      <h1>Welcome Edos Osemudiamen!</h1>
+      <form class="loan-form">
+          <div class="form-group">
+              <label for="loan-amount">Loan amount</label>
+              <input type="text" id="loan-amount">
+          </div>
+          <div class="form-group">
+              <label for="loan-duration">Repayment duration</label>
+              <select id="loan-duration">
+                <option value="" disabled selected>Please select repayment duration</option>
+                <option value="6">6 months</option>
+                <option value="12">12 months</option>
+              </select>
+          </div>
+          <div class="loan-details">
+              <!-- Add this inside the .loan-details div in your main-content section -->
+              <p><span id="amount-to-receive">Amount to receive: </span></p>
+              <p><span id="interest-rate">Interest rate: </span></p>
+              <p><span id="amount-to-payback">Amount to pay back: </span></p>
+              <p><span id="due-date">Due date: </span></p>
+              <p><span id="monthly-repayment">Monthly repayment: </span></p>
+
+          </div>
+          <button type="submit" class="btn-apply">Request for loan</button>
+      </form>
+  </div>
+  <script src="../loan_calculator/loanCalculator.js"></script>
+</body>
+</html>

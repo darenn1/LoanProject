@@ -32,35 +32,20 @@
 
         <label for="loan-duration">Loan Duration:</label>
         <select id="loan-duration" name="loan-duration">
+            <option value="" disabled selected>Please select repayment duration</option>
             <option value="6">6 months</option>
             <option value="12">12 months</option>
         </select>
-
-        <button type="button" onclick="calculateLoan()">Calculate</button>
     </form>
 
     <div id="loan-result">
-        <!-- Loan calculation result will be displayed here -->
+        <p><span id="amount-to-receive">Amount to receive: </span></p>
+        <p><span id="interest-rate">Interest rate: </span></p>
+        <p><span id="amount-to-payback">Amount to pay back: </span></p>
+        <p><span id="due-date">Due date: </span></p>
+        <p><span id="monthly-repayment">Monthly repayment: </span></p>
     </div>
 </main>
-
-<script>
-// JavaScript for calculation
-function calculateLoan() {
-    var amount = document.getElementById('loan-amount').value;
-    var duration = document.getElementById('loan-duration').value;
-    var interestRate = duration == "6" ? 0.10 : 0.15;
-    var interest = amount * interestRate;
-    var totalPayment = parseFloat(amount) + interest;
-    var monthlyPayment = totalPayment / duration;
-
-    // Display the result
-    document.getElementById('loan-result').innerHTML = 
-    'Monthly Payment: ' + monthlyPayment.toFixed(2) +
-    '<br>Total Payment: ' + totalPayment.toFixed(2) +
-    '<br>Total Interest: ' + interest.toFixed(2);
-}
-</script>
-
+<script src="loanCalculator.js"></script>
 </body>
 </html>

@@ -41,9 +41,8 @@ form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent default form submission
 
   if (validateForm()) {
-      
-      alert("Login successful!");
-      clearErrors();
+    window.location.assign("../customer/custEmpty.html");
+
       // Here, you would typically proceed with form submission or further processing
   }
 });
