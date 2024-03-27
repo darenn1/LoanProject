@@ -46,10 +46,6 @@
 .header-action .btn-get-loan:hover {
   background-color: #0056b3; /* Button hover state color */
 }
-.btn-get-loan a{
-  text-decoration: none;
-  color: white;
-}
 
 /* Ensure the main content is not hidden behind the fixed header */
 
@@ -84,11 +80,23 @@ body {
 }
 
 #loan-form input,
-#loan-form select {
+#loan-form select,
+#loan-form button {
   padding: 0.5rem;
   border-radius: 4px;
   border: 1px solid #ddd;
 }
+
+#loan-form button {
+  background-color: #007bff; /* Button color similar to the landing page */
+  color: white;
+  cursor: pointer;
+}
+
+#loan-form button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
 #loan-result {
   margin-top: 2rem;
   padding: 1rem;

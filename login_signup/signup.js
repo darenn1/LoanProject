@@ -5,56 +5,68 @@ function validateForm() {
     const phone = document.getElementById('phone');
     const password = document.getElementById('password');
     const confirmPassword = document.getElementById('confirm-password');
+    const firstNameError = document.getElementById('first-name-error');
+    const lastNameError = document.getElementById('last-name-error');
+    const phoneError = document.getElementById('phone-error');
+    const passwordError = document.getElementById('password-error');
+    const confirmPasswordError = document.getElementById('confirm-password-error');
   
     // Clear any previous error messages
-    firstName.nextElementSibling.innerHTML = "";
-    lastName.nextElementSibling.innerHTML = "";
-    phone.nextElementSibling.innerHTML = "";
-    password.nextElementSibling.innerHTML = "";
-    confirmPassword.nextElementSibling.innerHTML = "";
+    firstNameError.innerHTML = "";
+    lastNameError.innerHTML = "";
+    phoneError.innerHTML = "";
+    passwordError.innerHTML = "";
+    confirmPasswordError.innerHTML = "";
   
     // Error messages (if any)
-    let errorMessage = "";
+    let hasErrors = false;
   
     // Validate first name
     if (firstName.value.trim() === "") {
-        errorMessage += "Please enter your first name. <br>";
+        firstNameError.innerHTML = "Please enter your first name.";
+        hasErrors = true;
     }
 
     // Validate last name
     if (lastName.value.trim() === "") {
-        errorMessage += "Please enter your last name. <br>";
+        lastNameError.innerHTML = "Please enter your last name.";
+        hasErrors = true;
     }
   
     // Validate phone number
     if (phone.value === "") {
-      errorMessage += "Please enter your phone number. <br>";
+      phoneError.innerHTML = "Please enter your phone number.";
+      hasErrors = true; 
     } else if (isNaN(phone.value)) {
-      errorMessage += "Phone number can only contain numbers. <br>";
+      phoneError.innerHTML = "Phone number can only contain numbers.";
+      hasErrors = true;
     }
   
     // Validate password
     if (password.value === "") {
-      errorMessage += "Please enter your password. <br>";
+      passwordError.innerHTML = "Please enter your password.";
+      hasErrors = true;
     } else if (password.value.length < 6) {
-      errorMessage += "Password must be at least 6 characters long. <br>";
+      passwordError.innerHTML = "Password must be at least 6 characters long.";
+      hasErrors = true;
     }
   
     // Validate confirm password
     if (confirmPassword.value === "") {
-      errorMessage += "Please confirm your password. <br>";
+      confirmPasswordError.innerHTML = "Please confirm your password.";
+      hasErrors = true;
     } else if (confirmPassword.value !== password.value) {
-      errorMessage += "Passwords do not match. <br>";
+      confirmPasswordError.innerHTML = "Passwords do not match.";
+      hasErrors = true;
     }
   
     // Display error message (if any)
-    if (errorMessage !== "") {
-      alert(errorMessage);
+    if (hasErrors) {
       return false;
     }
   
     // If no errors, simulate sending OTP (replace with actual logic)
-    alert("OTP sent to your phone number!");
+    
     return true;
   }
   
@@ -63,6 +75,7 @@ function validateForm() {
     event.preventDefault(); // Prevent default form submission
   
     if (validateForm()) {
+      window.location.assign("../customer/custEmpty.html");
       // Form is valid, process form data here (e.g., send to server for signup)
     }
   });
