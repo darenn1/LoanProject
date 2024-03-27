@@ -47,6 +47,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5px; /* Gap between text and the icon */
+  margin-right: 70px;
 }
 
 .header-action .btn-get-loan:hover {
