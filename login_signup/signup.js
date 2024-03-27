@@ -1,6 +1,11 @@
 function saveUsername() {
   const username = document.getElementById('first_name').value;
-  localStorage.setItem('username', username); // Use sessionStorage if the data should only last for the session
+  localStorage.setItem('username', username);
+   // Use sessionStorage if the data should only last for the session
+}
+function saveUsernum(){
+  const usernum = document.getElementById('phone').value;
+  localStorage.setItem('usernum', usernum);
 }
 
 function validateForm() {
@@ -81,6 +86,7 @@ function validateForm() {
   
     if (validateForm()) {
       saveUsername();
+      saveUsernum();
       window.location.assign("../customer/custEmpty.html");
       // Form is valid, process form data here (e.g., send to server for signup)
     }

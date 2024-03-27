@@ -1,3 +1,7 @@
+function saveUsernum(){
+  const usernum = document.getElementById('phone').value;
+  localStorage.setItem('usernum', usernum);
+}
 function validateForm() {
   // Get the form elements
   const phone = document.getElementById('phone');
@@ -44,6 +48,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent default form submission
 
   if (validateForm()) {
+    saveUsernum();
     window.location.assign("../customer/custEmpty.html");
 
       // Here, you would typically proceed with form submission or further processing
