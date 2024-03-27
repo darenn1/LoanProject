@@ -90,3 +90,7 @@ button:hover {
 .sign-in-link a:hover {
   text-decoration: underline;
 }
+.error-message{
+  font-size: small;
+}
+

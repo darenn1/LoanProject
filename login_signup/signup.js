@@ -1,3 +1,8 @@
+function saveUsername() {
+  const username = document.getElementById('first_name').value;
+  localStorage.setItem('username', username); // Use sessionStorage if the data should only last for the session
+}
+
 function validateForm() {
     // Get the form elements
     const firstName = document.getElementById('first_name');
@@ -75,8 +80,10 @@ function validateForm() {
     event.preventDefault(); // Prevent default form submission
   
     if (validateForm()) {
+      saveUsername();
       window.location.assign("../customer/custEmpty.html");
       // Form is valid, process form data here (e.g., send to server for signup)
     }
   });
+
   
