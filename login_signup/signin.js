@@ -25,6 +25,9 @@ function validateForm() {
   if (password.value === "") {
     passwordError.innerHTML = "Please enter your password";
     hasErrors = true;
+  } else if (password.value.length < 6) {
+    passwordError.innerHTML = "Password must be at least 6 characters long.";
+    hasErrors = true;
   }
 
   // If errors are present, prevent form submission
