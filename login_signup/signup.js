@@ -30,31 +30,34 @@ function validateForm() {
     // Validate last name
     if (lastName.value.trim() === "") {
         lastNameError.innerHTML = "Please enter your last name.";
-        hasErrors = true
+        hasErrors = true;
     }
   
     // Validate phone number
     if (phone.value === "") {
       phoneError.innerHTML = "Please enter your phone number.";
+      hasErrors = true; 
     } else if (isNaN(phone.value)) {
       phoneError.innerHTML = "Phone number can only contain numbers.";
-      hasErrors = true
+      hasErrors = true;
     }
   
     // Validate password
     if (password.value === "") {
       passwordError.innerHTML = "Please enter your password.";
+      hasErrors = true;
     } else if (password.value.length < 6) {
       passwordError.innerHTML = "Password must be at least 6 characters long.";
-      hasErrors = true
+      hasErrors = true;
     }
   
     // Validate confirm password
     if (confirmPassword.value === "") {
       confirmPasswordError.innerHTML = "Please confirm your password.";
+      hasErrors = true;
     } else if (confirmPassword.value !== password.value) {
       confirmPasswordError.innerHTML = "Passwords do not match.";
-      hasErrors = true
+      hasErrors = true;
     }
   
     // Display error message (if any)
