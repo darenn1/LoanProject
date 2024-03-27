@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+    <link rel="stylesheet" href="custRepay.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="logo.png" alt="LoanMe Logo" class="logo">
+        </div>
+        <div class="menu">
+            <a href="custLoan.html" class="menu-item">
+                <img src="money.png" alt="" class="icon">
+                Apply for loan
+            </a>
+            <a href="#" class="menu-item active">
+                <img src="card.png" alt="" class="icon">
+                Repayment
+            </a>
+        </div>
+        <div class="logout-section">
+            <p id="currNum"></p>
+            <a href="../landing_page/Home.html" class="logout-link">
+                <img src="logout.png" alt="" class="icon">
+                Log Out
+            </a>
+        </div>
+    </div>
+    <div class="main-content">
+      <form class="loan-form">
+          <div class="form-group">
+              <label for="first-name">Enter first name</label>
+              <input type="text" id="first-name">
+              <label for="last-name">Enter last name</label>
+              <input type="text" id="last-name">
+              <label for="loan-amount">Amount to be paid</label>
+              <input type="text" id="loan-amount">
+          </div>
+          <button type="button" class="btn-apply">Pay Loan</button>
+      </form>
+  </div>
+  <script src="cust.js"></script>
+</body>
+</html>
