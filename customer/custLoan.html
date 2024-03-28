@@ -31,7 +31,7 @@
     </div>
     <div class="main-content">
       <h1 id="welcomeMessage"></h1>
-      <form class="loan-form">
+      <form id="requestLoan" class="loan-form">
           <div class="form-group">
               <label for="loan-amount">Loan amount</label>
               <input type="text" id="loan-amount">
@@ -52,9 +52,22 @@
               <p><span id="monthly-repayment">Monthly repayment: </span></p>
 
           </div>
-          <button type="button" class="btn-apply">Request for loan</button>
+          <button type="submit" class="btn-apply">Request for loan</button>
       </form>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const requestLoanForm = document.getElementById('requestLoan');
+        requestLoanForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting traditionally
+            const amountToPayBack = document.getElementById('amount-to-payback').textContent; // Ensure this is the correct ID and contains the value
+            sessionStorage.setItem('amountDue', amountToPayBack); // Use 'amountDue' for consistency
+    
+            window.location.href = 'repayTable.html'; // Redirecting to repayTable.html
+        });
+    });
+    </script>
+    
   <script src="../loan_calculator/loanCalculator.js"></script>
   <script src="cust.js"></script>
 </body>

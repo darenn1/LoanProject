@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+    <link rel="stylesheet" href="repayTable.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-section">
+            <img src="logo.png" alt="LoanMe Logo" class="logo">
+        </div>
+        <div class="menu">
+            <a href="custLoan.html" class="menu-item">
+                <img src="money.png" alt="" class="icon">
+                Apply for loan
+            </a>
+            <a href="#" class="menu-item active">
+                <img src="card.png" alt="" class="icon">
+                Repayment
+            </a>
+        </div>
+        <div class="logout-section">
+            <p id="currNum"></p>
+            <a href="../landing_page/Home.html" class="logout-link">
+                <img src="logout.png" alt="" class="icon">
+                Log Out
+            </a>
+        </div>
+    </div>
+    <div class="repayment-content">
+      <table class="repayment-table">
+          <thead>
+              <tr>
+                  <th>Customer Name</th>
+                  <th>Amount Due</th>
+                  <th>Amount Paid</th>
+                  <th>Repayment Status</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Example row: duplicate and adjust for each customer -->
+              <tr>
+                  <td id="amountLoaned"></td>
+                  <td id="amountDue"></td>
+                  <td id="amountPaid"></td>
+                  <td id="status">Ongoing</td>
+              </tr>
+              <!-- Add more rows as needed -->
+          </tbody>
+      </table>
+      <a href="custRepay.html" class="btn-repay">Repay Loan</button>
+  </div>
+  
+  <script src="cust.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const amountDue = sessionStorage.getItem('amountDue'); // Retrieving 'amountDue'
+        const amountPaid = sessionStorage.getItem('amountPaid'); // Retrieving 'amountPaid'
+        document.getElementById('amountDue').textContent = amountDue || 'N/A'; // Display 'amountDue'
+        document.getElementById('amountPaid').textContent = amountPaid || 'N/A'; // Display 'amountPaid'
+    });
+    </script>
+    
+</body>
+</html>
