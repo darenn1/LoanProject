@@ -13,38 +13,36 @@
             <img src="logo.png" alt="LoanMe Logo">
         </div>
         <div class="form-section">
-            <form>
+            <form action="signup.php" method="POST" onsubmit="return validateForm()">
                 <h2>Sign up</h2>
                 <div class="form-group">
-                  <label for="name">First name</label>
-                  <input type="name" id="first_name">
-                  <span class="error-message" id="first-name-error"></span> <!-- Add this -->
-              </div>
-              <div class="form-group">
-                <label for="name">Last name</label>
-                <input type="name" id="last_name">
-                <span class="error-message" id="last-name-error"></span> <!-- Add this -->
-            </div>
+                    <label for="first_name">First name</label>
+                    <input type="text" id="first_name" name="first_name">
+                    <span class="error-message" id="first-name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last name</label>
+                    <input type="text" id="last_name" name="last_name">
+                    <span class="error-message" id="last-name-error"></span>
+                </div>
                 <div class="form-group">
                     <label for="phone">Phone number</label>
-                    <input type="tel" id="phone">
-                    <span class="error-message" id="phone-error"></span> <!-- Add this -->
+                    <input type="tel" id="phone" name="phone">
+                    <span class="error-message" id="phone-error"></span>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" name="password">
                     <span class="error-message" id="password-error"></span>
                 </div>
                 <div class="form-group">
                     <label for="confirm-password">Confirm password</label>
-                    <input type="password" id="confirm-password">
+                    <input type="password" id="confirm-password" name="confirm_password">
                     <span class="error-message" id="confirm-password-error"></span>
                 </div>
-                <button type="submit">Sign up</button>
-                <div class="sign-in-link">
-                    Already have an account? <a href="signin.html">Sign in</a>
-                </div>
+                <button type="submit">Sign Up</button>
             </form>
+            
         </div>
     </div>
 

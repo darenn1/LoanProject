@@ -9,6 +9,8 @@ function saveUsernum(){
 }
 
 function validateForm() {
+
+
     // Get the form elements
     const firstName = document.getElementById('first_name');
     const lastName = document.getElementById('last_name');
@@ -82,6 +84,15 @@ function validateForm() {
   
   const form = document.querySelector('form');
   form.addEventListener('submit', (event) => {
+
+    fetch('signup.php') // Ensure this path is correct
+        .then(response => response.json())
+        .then(data => {
+          window.location.assign("../customer/custEmpty.html");
+        })
+        .catch(error => console.error('Error getting user data:', error));
+
+    
     event.preventDefault(); // Prevent default form submission
   
     if (validateForm()) {
@@ -91,5 +102,11 @@ function validateForm() {
       // Form is valid, process form data here (e.g., send to server for signup)
     }
   });
+
+
+
+
+
+
 
   
