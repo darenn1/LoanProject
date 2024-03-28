@@ -63,48 +63,46 @@ body {
 .logout-link .icon {
   margin-right: 5px; /* Space between icon and text */
 }
-
-.main-content {
+/* Styles for repayment content */
+.repayment-content {
   flex-grow: 1;
-  padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align content to the left */
-}
-.loan-form {
-  width: 100%; /* Form takes full width of the content area */
+  justify-content: space-between; /* Space out table and button */
+  padding: 40px;
+  background-color: #fff; /* Assuming a light background */
+  color: #333; /* Dark text color for readability */
 }
 
-.form-group {
+.repayment-table {
+  width: 100%; /* Table to take full width of content area */
+  border-collapse: collapse;
   margin-bottom: 20px;
-  color: black;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
+.repayment-table th,
+.repayment-table td {
+  border: 1px solid #ddd; /* Light border for cells */
+  padding: 8px;
+  text-align: left;
 }
 
-.form-group input[type="text"]{
-  width: 100%; /* Full width */
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: transparent; /* Darker background for the inputs */
-  border: 1px solid #444; /* Slightly lighter border for the inputs */
-  color: black;
+.repayment-table th {
+  background-color: #f2f2f2; /* Slightly different bg for headers */
 }
-.btn-apply {
+
+/* Style for 'Repay Loan' button */
+.btn-repay {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #007bff; /* Green background for 'Repay' action */
   border: none;
   color: white;
   font-size: 1em;
   cursor: pointer;
+  text-transform: uppercase;
+  align-self: center; /* Center button in the content area */
 }
 
-.btn-apply:hover {
-  background-color: #0056b3;
-}
-#amountRepay{
-  padding: 10px;
+.btn-repay:hover {
+  background-color: #0056b3; /* Darker green on hover */
 }

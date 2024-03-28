@@ -30,18 +30,29 @@
         </div>
     </div>
     <div class="main-content">
-      <form class="loan-form">
+      <form class="loan-form" id="repayForm">
           <div class="form-group">
-              <label for="first-name">Enter first name</label>
+              <!-- <label for="first-name">Enter first name</label>
               <input type="text" id="first-name">
               <label for="last-name">Enter last name</label>
-              <input type="text" id="last-name">
+              <input type="text" id="last-name"> -->
               <label for="loan-amount">Amount to be paid</label>
-              <input type="text" id="loan-amount">
+              <input type="text" id="loan-amount" name="loan-amount">
           </div>
-          <button type="button" class="btn-apply">Pay Loan</button>
+          <button type="submit" class="btn-apply">Pay Loan</button>
       </form>
   </div>
   <script src="cust.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('repayForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting in the traditional way
+            const amountToBePaid = document.getElementById('loan-amount').value;
+            sessionStorage.setItem('amountPaid', amountToBePaid); // Key changed to 'amountPaid' for clarity
+            window.location.href = 'repayTable.html'; // Redirect to repayTable.html
+        });
+    });
+    </script>
+    
 </body>
 </html>
